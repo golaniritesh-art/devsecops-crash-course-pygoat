@@ -51,8 +51,8 @@ jobs:
       #     docker scout cves myapp:latest
       
       - name: Docker Scout
-       uses: docker/scout-action@v1.23.1
-       with: 
+        uses: docker/scout-action@v1.23.1
+        with: 
            dockerhub-user: ${{ secrets.REPO_USER }}
            dockerhub-password: ${{ secrets.REPO_PWD }}
            command: quickview, cves
