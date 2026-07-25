@@ -45,9 +45,9 @@ jobs:
     - name: Show default daemon json content
       run: |
           if [ -f /etc/docker/daemon.json ]; then
-          sudo cat /etc/docker/daemon.json
+            sudo cat /etc/docker/daemon.json
           else
-          echo "daemon.json not found - using default Docker configuration"
+            echo "daemon.json not found - using default Docker configuration"
           fi
           
     - name: Build Docker Image
