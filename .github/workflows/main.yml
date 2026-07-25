@@ -43,12 +43,7 @@ jobs:
         docker-version: '20.10.7'
 
     - name: Show default daemon json content
-      run: |
-          if [ -f /etc/docker/daemon.json ]; then
-            sudo cat /etc/docker/daemon.json
-          else
-            echo "daemon.json not found - using default Docker configuration"
-          fi
+      run: echo "Docker setup complete - daemon.json check skipped"
           
     - name: Build Docker Image
       run: docker build -f Dockerfile -t myapp:latest 
