@@ -57,7 +57,7 @@ jobs:
            dockerhub-password: ${{ secrets.REPO_PWD }}
            command: quickview, cves
            only-severities: critical, high
-           sarif-file: scout-report.sarif
+           sarif-file: sca-report.sarif
            exit-code: true
            
       - name: Upload Artifact
